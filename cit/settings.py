@@ -31,6 +31,8 @@ ALLOWED_HOSTS = [u'django-newenv.rfabe4ridz.us-east-1.elasticbeanstalk.com', u'1
 # Application definition
 
 INSTALLED_APPS = [
+    'personal',
+    'webapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
