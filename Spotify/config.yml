@@ -1,0 +1,5 @@
+spotify:
+  user_name: 'chimezie90@gmail.com'
+  client_id: '33f4a223a2a8451aa0feeebac0529655'
+  client_secret: 'b37e29ae604843d683faa26a729d0a2c'
+  redirect_uri: 'http://127.0.0.1:8000/'

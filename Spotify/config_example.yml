@@ -1,0 +1,5 @@
+spotify:
+  user_name: <INSERT SPOTIFY USERNAME>
+  client_id: <INSERT SPOTIFY CLIENT ID>
+  client_secret: <INSERT SPOTIFY CLIENT SECRET>
+  redirect_uri: <INSERT REDIRECT URI>

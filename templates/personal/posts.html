@@ -1,0 +1,11 @@
+{%  extends "personal/header.html" %}
+
+{% block content %}
+    <div>
+        <h2>Here are a listing of posts!</h2>
+            {% for post in object_list %}
+                <h5> {{ post.date|date: "Y-m-d" }} {{post.body}} </h5>
+            {% endfor %}
+    </div>
+
+{% endblock  %}
