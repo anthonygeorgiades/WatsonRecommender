@@ -9,17 +9,6 @@ def index(request):
     return render(request, 'spotify/playlist.html')
 
 
-
-def spotifyQuery(request):
-	encodeQuery = urllib.quote(request.POST['artistQuery'])
-	spotifyData = spotifyquery.getSpotifyData(encodeQuery)
-
-	if spotifyData is None:
-		return render(request, 'spotify/noresult.html')
-	else:
-		return render(request, 'spotify/searchresult.html', spotifyData['artist'])
-
-
 def something(request):
     '''
     Index view renders a search bar with a list of results 
