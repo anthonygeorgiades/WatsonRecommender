@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcfab386-0dfa-423c-9426-3ffb6911b409" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spotify/spotifyquery.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spotify/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personal/spotifysearch.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/personal/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/personal/posts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spotify/noresult.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spotify/playlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spotify/searchlanding.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spotify/searchresult.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/watson/comment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson/utils/toneAnalyzer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson/utils/watsonToneAnalyzer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/watson_app/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cit.iml" afterPath="$PROJECT_DIR$/.idea/cit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spotify/models.py" afterPath="$PROJECT_DIR$/Spotify/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spotify/oath.py" afterPath="$PROJECT_DIR$/Spotify/oath.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spotify/views.py" afterPath="$PROJECT_DIR$/Spotify/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cit/settings.py" afterPath="$PROJECT_DIR$/cit/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cit/urls.py" afterPath="$PROJECT_DIR$/cit/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/admin.py" afterPath="$PROJECT_DIR$/personal/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/models.py" afterPath="$PROJECT_DIR$/personal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/urls.py" afterPath="$PROJECT_DIR$/personal/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/views.py" afterPath="$PROJECT_DIR$/personal/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watson/admin.py" afterPath="$PROJECT_DIR$/watson/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watson/models.py" afterPath="$PROJECT_DIR$/watson/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/Spotify/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -63,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/personal/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -75,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/Spotify/spotifyquery.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -85,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/personal/spotifysearch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +100,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-              <folding />
+              <folding>
+                <marker date="1493908581000" expanded="true" signature="39:3597" ph="{% block content ... %}" />
+                <marker date="1493908581000" expanded="true" signature="2446:2666" ph="{% if not q ... %}" />
+                <marker date="1493908581000" expanded="true" signature="2818:3128" ph="{% for item in items ... %}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +114,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
-              <folding />
+              <folding>
+                <marker date="1493856838000" expanded="true" signature="39:482" ph="{% block content ... %}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -335,7 +345,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.cit">
+  <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -507,33 +517,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="cit" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="cit.settings" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cit" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/admin" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Django server.cit" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -559,14 +542,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1136" y="12" width="1130" height="729" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3720565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27575758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27575758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12831858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -905,7 +887,7 @@
         <state relative-caret-position="195">
           <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="e#231#250#0#HTML" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -958,7 +940,7 @@
     <entry file="file://$PROJECT_DIR$/Spotify/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -968,7 +950,7 @@
     <entry file="file://$PROJECT_DIR$/personal/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -978,7 +960,7 @@
     <entry file="file://$PROJECT_DIR$/personal/spotifysearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -987,7 +969,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
-          <folding />
+          <folding>
+            <marker date="1493856838000" expanded="true" signature="39:482" ph="{% block content ... %}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,14 +979,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding />
+          <folding>
+            <marker date="1493908581000" expanded="true" signature="39:3597" ph="{% block content ... %}" />
+            <marker date="1493908581000" expanded="true" signature="2446:2666" ph="{% if not q ... %}" />
+            <marker date="1493908581000" expanded="true" signature="2818:3128" ph="{% for item in items ... %}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Spotify/spotifyquery.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding />
         </state>
       </provider>
