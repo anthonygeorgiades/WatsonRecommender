@@ -8,24 +8,26 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <title>MoodMusic</title>
+    <div class="col-lg-12">
     <div class="jumbotron">
         <h1>WELCOME TO MOOD MUSIC!</h1>
         <p> This is an application that will create a playlist based on analyzing your mood.</p>
     </div>
+    </div>
 </head>
 <body class="body" style="background-color:#f6f6f6">
-<div>
-    {#        {% block content %}#}
-    {#        {% endblock  %}#}
+<div class="col-lg-12">
+            {% block content %}
+            {% endblock  %}
 
-    <form action="{% url 'form' %}" method="post">
-        {% csrf_token %}
+{#    <form action="{% url 'form' %}" method="post">#}
+{#        {% csrf_token %}#}
 {#        {% for choice in question.choice_set.all %}#}
-            <input type="text" name="userinput" value="Enter string" />
-            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br/>
+{#            <input type="text" name="userinput" value="Enter string" />#}
+{#            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br/>#}
 {#        {% endfor %}#}
-        <input type="submit" value="Vote"/>
-    </form>
+{#        <input type="submit" value="Vote"/>#}
+{#    </form>#}
 
 
 </div>
