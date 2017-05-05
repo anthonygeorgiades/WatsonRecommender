@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import json
 from django import forms
@@ -29,10 +29,14 @@ def submit(request):
     # tone_analyzer.tone(selected_choice)
     # current_tone = Tone()
     # current_tone  # potentially use to save tones
+
+    # arrays to save varies types of tones from watson
     emotions = dict()
     writing = dict()
     personality = dict()
     data = json.loads(json.dumps(tone_analyzer.tone(selected_choice), indent=2).decode("utf-8"))
+
+    # parse Json object and fill arrays
     for cat in data['document_tone']['tone_categories']:
         # print('Category:', cat['category_name'])
         for tone in cat['tones']:
@@ -45,12 +49,18 @@ def submit(request):
                 # print('emmanuel thinks this is \n')
                 # print(emotions[tone['tone_name']])
             # print('-', tone['tone_name'])
-    print(json.dumps(tone_analyzer.tone(selected_choice), indent=2))
+    # print(json.dumps(tone_analyzer.tone(selected_choice), indent=2))
 
+    # get sorted representation of the dict and take the highest element
     sorted_emotions = sorted(emotions.items(), key=operator.itemgetter(1), reverse=True)
     my_reply = next(iter(sorted_emotions))
+    # context = {
+    #     'emotion': my_reply[0],
+    #     'valence': my_reply[0],
+    # }
 
-    return HttpResponse(my_reply[0])
+    return redirect('watson/emotion.html', my_reply[0])
+    # return HttpResponse(my_reply[0])
 
 
 class CommentView(FormView):
