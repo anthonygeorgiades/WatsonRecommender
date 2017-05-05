@@ -1,10 +1,56 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import json
+from django import forms
+from django.conf import settings
+from watson_app.models import Tone
+import operator
+
+# Watson dependencies
+from os.path import join, dirname
+from watson_developer_cloud import ToneAnalyzerV3
+
+
+
+# Watson authentication
+tone_analyzer = ToneAnalyzerV3(
+    username='24f37052-507d-4e52-a2e6-dd2b99b4666f',
+    password='vAFkxEExVyfl',
+    version='2016-02-11')
+
 
 # Create your views here.
 from django.views.generic.edit import FormView
 from watson_app.forms import CommentForm
+
+
+def submit(request):
+    selected_choice = request.POST['userinput']
+    # tone_analyzer.tone(selected_choice)
+    # current_tone = Tone()
+    # current_tone  # potentially use to save tones
+    emotions = dict()
+    writing = dict()
+    personality = dict()
+    data = json.loads(json.dumps(tone_analyzer.tone(selected_choice), indent=2).decode("utf-8"))
+    for cat in data['document_tone']['tone_categories']:
+        # print('Category:', cat['category_name'])
+        for tone in cat['tones']:
+            if cat['category_name'] == 'Emotion Tone':
+                emotions.update({tone['tone_name']: tone['score']})
+            if cat['category_name'] == 'Writing Tone':
+                writing.update({tone['tone_name']: tone['score']})
+            if cat['category_name'] == 'Social Tone':
+                personality.update({tone['tone_name']: tone['score']})
+                # print('emmanuel thinks this is \n')
+                # print(emotions[tone['tone_name']])
+            # print('-', tone['tone_name'])
+    print(json.dumps(tone_analyzer.tone(selected_choice), indent=2))
+
+    sorted_emotions = sorted(emotions.items(), key=operator.itemgetter(1), reverse=True)
+    my_reply = next(iter(sorted_emotions))
+
+    return HttpResponse(my_reply[0])
 
 
 class CommentView(FormView):
@@ -13,5 +59,5 @@ class CommentView(FormView):
     success_url = '.'
 
     def form_valid(self, form):
-        serialized_json = json.dumps(form.ask_watson() , sort_keys=True, indent=4)
+        serialized_json = json.dumps(form.ask_watson(), sort_keys=True, indent=4)
         return HttpResponse(serialized_json, content_type="application/json")

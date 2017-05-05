@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!6e+%(fw2w$*zg!p_+pk94v5vd67d__0cxnhlz^2es9$^=45-x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [u'django-newenv.rfabe4ridz.us-east-1.elasticbeanstalk.com', u'127.0.0.1']
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
 #
 APIKEY = "24f37052-507d-4e52-a2e6-dd2b99b4666f",
+SECRET = "vAFkxEExVyfl"
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',

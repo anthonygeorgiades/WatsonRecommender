@@ -7,21 +7,36 @@ import json
 from os.path import join, dirname
 from watson_developer_cloud import ToneAnalyzerV3
 
-# Getting APIKEY variable from settings
+#Getting APIKEY variable from settings
 # APIKEY = {
 #   "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
 #   "username": "24f37052-507d-4e52-a2e6-dd2b99b4666f",
 #   "password": "vAFkxEExVyfl"
 # }
-
+#
 #   "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
 #   "username": "24f37052-507d-4e52-a2e6-dd2b99b4666f",
 #   "password": "vAFkxEExVyfl"
 
-# APIKEY = getattr(settings, "APIKEY", None)
-#
-# # Watson authentication
-# tone_analyzer = ToneAnalyzerV3(api_key=APIKEY)
+
+# APIKEY = getattr(settings, "APIKEY", "SECRET")
+
+# Watson authentication
+tone_analyzer = ToneAnalyzerV3(
+    username='24f37052-507d-4e52-a2e6-dd2b99b4666f',
+    password='vAFkxEExVyfl',
+    version='2016-02-11')
+
+
+
+
+# print(json.dumps(tone_analyzer.tone(text='userinput'), indent=2))
+
+# print(json.dumps(tone_analyzer.tone(text='I am very happy'), indent=2))
+
+# utterances = [{'text': 'I am very happy', 'user': 'glenn'}]
+# print(json.dumps(tone_analyzer.tone(utterances), indent=2))
+
 
 class CommentForm(forms.Form):
     comment = forms.CharField(
