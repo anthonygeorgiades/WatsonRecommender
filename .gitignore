@@ -1,5 +1,6 @@
 #Git ignore
 .idea
+.idea/workspace.xml
 *.pyc
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
