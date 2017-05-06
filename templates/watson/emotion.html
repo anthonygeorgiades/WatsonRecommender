@@ -2,9 +2,15 @@
 
 {% block content %}
     <div class="col-lg-12">
-        <div class="input-group">
-            <h2> Hi we've predicted you're valence to be </h2>
-            <h5> {{ emotion }}</h5>
-      </div><!-- /.col-lg-6 -->
+        <h2> Are you feeling {{ emotion }}?</h2>
+        <div class="col-lg-6">
+            <button type="submit" class="btn btn-primary">No! Start again</button>
+        </div><!-- /.row -->
+
+        <div class="col-lg-6">
+            <button type="submit" class="btn btn-primary">Yes! Get the music</button>
+        </div><!-- /.row -->
     </div><!-- /.row -->
+
+
 {% endblock  %}
