@@ -14,6 +14,7 @@ from watson_developer_cloud import ToneAnalyzerV3
 
 # Watson authentication
 #here is a comment
+#here is another
 tone_analyzer = ToneAnalyzerV3(
     username='afad9d73-df3e-41c8-976c-9c505fa2dd12',
     password='SPBJxlMsVrl0',
